@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--------------- Chapter 46, 48 - Events --------------->
+    <!-- Problem 1 -->
+    <p id="msgPara"></p>
+    <button id="1" onclick="displayMessage()">Show Message</button>
+    <br />
+    
+    <!-- Problem 2 -->
+    <div id="box"></div>
+    <button onclick="hide()">Hide</button>
+    <br />
+    
+    <!-- Problem 3 -->
+    <a href="JavaScript:void(0)" id="link" onmouseover="changeColor()" onmouseout="originalColor()">This is a link</a>
+    <br />
+    
+    <!-- Problem 4 -->
+    <a href="" id="scrollTop" onclick="scrollToTop()">Go to top</a>
+    <br />
+    
+    <!-- Problem 5 -->
+    <a href="JavaScript:void(0)" onclick="groupSound.play()">Play</a>
+    <br />
+    
+    <!-- Problem 6 -->
+    <a href="JavaScript:void(0)" onclick="openWindow()">Open window</a>
+    <br />
+    
+    <!-- Problem 7 -->
+    <button onclick="alertMessage()">Alert Message</button>
+    <br />
+    
+    <!-- Problem 8 -->
+    <button id="hoverBtn" onmouseover="diffColorOnHover()" onmouseout="backToOirginalColor()">Hover over me!</button>
+    <br />
+    
+    <!-- Problem 9 -->
+    <button onclick="birdsSound.play()">Play</button>
+    <br />
+    
+    <!-- Problem 10 -->
+    <div id="circle" onmouseover="alertMsg()"></div>
+    
+    <!-- Problem 11 -->
+    <div id="triangle" onmouseout="hideElement()"></div>
+    
+    <!-- Problem 12 -->
+    <a href="#" onclick="openNewWindow()">Open new window</a>
+    <br />
+    
+
+    <!--------------- Chapter 49, 50 - Reading and Setting field values --------------->
+
+    <!-- Problem 1 -->
+    <form action="JavaScript:void(0)">
+        <label for="userName">
+            <input type="text" placeholder="Enter your name" id="userName" />
+        </label>
+        <button type="submit" onclick="getUserName()">Submit</button>
+    </form>
+    
+    <!-- Problem 2 -->
+    <form action="JavaScript:void(0)">
+        <label for="reading">
+            <input type="checkbox" name="reading" value="reading" id="reading">
+            Reading
+        </label>
+        <label for="writing">
+            <input type="checkbox" name="writing" value="writing" id="writing">
+            Writing
+        </label>
+        <label for="coding">
+            <input type="checkbox" name="coding" value="coding" id="coding">
+            Coding
+        </label>
+        <button type="submit" onclick="getUserHobbies()">Submit</button>
+    </form>
+    
+    <!-- Problem 3 -->
+    <form action="JavaScript:void(0)">
+        <label for="country">Where are you from?
+            <select name="user_country" id="country" required>
+                <option value="#" selected disabled>Select your option</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Japan">Japan</option>
+                <option value="Australia">Australia</option>
+                <option value="France">France</option>
+                <option value="Other">Other</option>
+            </select>
+        </label>
+        <button type="submit" onclick="getUserCountry()">Submit</button>
+    </form>
+
+
+
+    
+</body>
+<script src="app.js"></script>
+</html>
